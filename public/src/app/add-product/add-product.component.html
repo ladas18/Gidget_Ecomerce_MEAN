@@ -1,0 +1,41 @@
+<button [routerLink]="['/']">Home</button>
+<h1>Add a new product:</h1>
+<form (submit) = "addProduct()">
+  <label>Name:</label>
+  <input name="name" type="text" [(ngModel)]="product.name"/>
+  <br>
+  <label>Description:</label>
+  <textarea name="desc" [(ngModel)]="product.desc"></textarea>
+  <br>
+  <label>Price:</label>
+  <input name="price" type="number" min=0 [(ngModel)]="product.price"/>
+  <br>
+  <label>Quanity:</label>
+  <input name="quanity" type="number" min=0 [(ngModel)]="product.quanity"/>
+  <br>
+  <label>Category:</label>
+  <select name="category" [(ngModel)]="product.category">
+    <option value="new">New</option>
+    <option value="bestsellers">Bestsellers</option>
+    <option value="U20">Under $20</option>
+    <option value="tools">Tools & Tech</option>
+    <option value="solar">Solar-Powered</option>
+    <option value="windup">Wind-Up Toys</option>
+  </select>
+  <br>
+  <label>Img1:</label>
+  <input type="text" name="img1" [(ngModel)]="product.img1"/>
+  <br>
+  <label>Search:</label>
+  <input name="search" type="text" [(ngModel)]="product.search"/>
+  <br>
+  <input type = "submit" value="Submit"/>
+</form>
+<button [routerLink]="['/']">Cancel</button>
+<div>
+    {{product.name}}
+    {{product.desc}}
+    {{product.price}}
+    {{product.image}}
+    {{product.category}}
+</div>

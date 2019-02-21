@@ -1,0 +1,21 @@
+.prod_img {
+    display: inline-block;
+    width: 50%
+}
+
+.prod_img img {
+    height: 250px;
+    width: 250px;
+    margin: 1%
+}
+
+.prod_info {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 30px;
+}
+
+.review_div {
+    background-color: #3DB89B
+}

@@ -1,0 +1,13 @@
+<div class="item_container" >
+    <div class="item" *ngFor='let item of u20Products'>
+      <h2 class="name">{{item.name}}</h2>
+        <a [routerLink]="['../details/' + item._id]">
+          <img src="products/{{item.images[0]}}">
+        </a>
+      <h2>${{item.price}}</h2>
+    </div>  
+  </div>
+  
+  <footer>Photos Courtesy of Kikkerland Design Inc.</footer>
+  
+  

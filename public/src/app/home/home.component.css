@@ -1,0 +1,52 @@
+
+h3 {
+  font-family: 'Mouse Memoirs', sans-serif;
+  }
+/* 
+  .items1 {
+    background-color: skyblue;
+    height: 500px;
+  } */
+
+  .items1 p {
+    color: white;
+  }
+
+  /* .items1 h3 {
+    background-color: green;
+  } */
+
+  .items1 div{
+    display: inline-block;
+    margin: 1%;
+    padding-left: 100px;
+  }
+
+  .items1 img {
+    background-color: white;
+  }
+
+  /* .items2 {
+    background-color: skyblue;
+  } */
+
+  .items2 div{
+    display: inline-block;
+    margin: 1%;
+    padding-left: 100px;
+  }
+
+  .items2 p {
+    color: white;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* .items2 h3 {
+    background-color: green;
+  } */
+
+

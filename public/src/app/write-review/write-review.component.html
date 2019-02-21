@@ -1,0 +1,15 @@
+<form (submit)="addReview()">
+  <label>Name:</label>
+  <br>
+  <input type="text" name="name" [(ngModel)]="review.name">
+  <br>
+  <label>Rating:</label>
+  <br>
+  <input type="number" name="rating" min=1 max=5 [(ngModel)]="review.rating">
+  <br>
+  <label>Leave a Review:</label>
+  <br>
+  <textarea name="review" [(ngModel)]="review.review"></textarea>
+  <br>
+  <button>Submit Review</button>
+</form>

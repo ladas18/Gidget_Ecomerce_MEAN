@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+html,body
+{
+    background-color:#F5928D;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+nav{
+font-family: 'Mouse Memoirs', sans-serif;
+}
+
+nav a{
+    text-decoration:none;
+    display: inline-block;
+    color:white;
+    /* vertical-align: middle;  */
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+nav a:hover{
+    color:#2c5e83;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+h1, h2, h3, h4, p, label {
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: white;
+}
+
+h1 {
+    background-color:#F5928D;
+}
+
+ul {
+    background-color:#F5928D;
+}
+
+.items1 h3 {
+    background-color:#B0DE53;
+    color: white;
+    text-align: center;
+  }
+
+.items2 h3 {
+    background-color: #B0DE53;
+    color: white;
+    text-align: center;
+}
+
+.item_container {
+    background-color: #3DB89B;
+    display: inline-block;
+    text-align: center;
+  }
+
+.item_container img {
+    width: 350px;
+    height: 300px;
+}
+
+.item_container .name {
+    background-color: #B0DE53;
+    color: white;
+    text-align: center;
+}
+
+.item_container h2 {
+    color: white;
+    text-align: center;
+}
+
+.item {
+    display: inline-block;
+    margin: 2%
+}
+
+footer {
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #008575;
+    text-align:center;
+    background-color: #3DB89B;
+}
+
+.shopping_cart img {
+    height: 200px;
+    width:200px;
+}

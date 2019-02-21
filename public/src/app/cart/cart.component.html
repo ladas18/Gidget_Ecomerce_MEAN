@@ -1,0 +1,13 @@
+<div class="shopping_cart" *ngFor='let idx of cart'>
+    <h2 class="name">{{idx.name}}</h2>
+    <a [routerLink]="['../details/' + idx._id]">
+    <img src="products/{{idx.image}}">
+    </a>
+    <h2>${{idx.price}}</h2>
+    <form (submit)="deleteCart(idx)">
+        <button>Delete</button>
+    </form>  
+</div>  
+
+<a [routerLink]="['../payment']">Proceed To Checkout</a>
+

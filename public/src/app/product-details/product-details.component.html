@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="prod_img">
+      <img *ngFor='let idx of product.images' src="products/{{idx}}">
+  </div>
+  <div class="prod_info">
+      <h1>{{product.name}}</h1>
+      <h2>${{product.price}}</h2>
+      <p>{{product.description}}</p>
+      <form (submit)=addToCart()>
+        <input type="number" min=0 name="amount"[(ngModel)]="product.quanity">
+        <button>Add To Cart</button>
+      </form>
+      <!-- <form (submit)=createACart()>
+        <button>Create a Cart</button>
+      </form> -->
+      <h2>View Reviews</h2>
+      <div class="review_div" *ngFor='let review of product.reviews'>
+        <p>Name: {{review.name}}</p>
+        <p>Rating: {{review.rating}}</p>
+        <p>Review: {{review.review}}</p>
+      </div>
+  </div>
+  <app-write-review></app-write-review>
+</div>
