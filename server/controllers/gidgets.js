@@ -166,20 +166,20 @@ var mongoose = require('mongoose'),
         //console.log("Inside: ",req.body.quanity)
         var user = 1;
         var productId = req.body._id;
-        Cart.find({userID: user}, (err, found) => {
-            var duplicateCheck = found[0].items[0].name;
-            console.log("Found:",duplicateCheck)
-            if(duplicateCheck == req.body.name) {
-                console.log("Matched!")
-                Cart.update({userID: user},
-                    {$inc: {
-                        items: {
-                            quanity: req.body.quanity
-                        }
-                    }
-                });
-            }
-            else {
+        // Cart.find({userID: user}, (err, found) => {
+        //     var duplicateCheck = found[0].items[0].name;
+        //     console.log("Found:",duplicateCheck)
+        //     if(duplicateCheck == req.body.name) {
+        //         console.log("Matched!")
+        //         Cart.update({userID: user},
+        //             {$inc: {
+        //                 items: {
+        //                     quanity: req.body.quanity
+        //                 }
+        //             }
+        //         });
+        //     }
+        //     else {
                 console.log("Not Matched",req.body.name)
                 Cart.update({
                 userID: user},
@@ -199,8 +199,8 @@ var mongoose = require('mongoose'),
                     console.log("THIS IS CART: ", cart);
                     console.log("THIS IS ERROR: ", err);
         });
-            }
-        })
+            // }
+        // })
         
     },
 
